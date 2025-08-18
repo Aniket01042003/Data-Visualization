@@ -6,7 +6,7 @@ import Navbar from '../component/Navbar/Navbar';
 import Register from '../component/LoginReg/Register';
 import ContactUs from '../component/Contact/ContactUs';
 import About from '../aboutUs/About';
-import Footer from '../footer/Footer.js';
+import Footer from '../footer/Footer';
 import Profile from '../component/profile/profile';
 import ShowDataset from '../component/UploadData/ShowDataset';
 import Graph2D from '../component/2dchart/Graph2D';
@@ -40,4 +40,5 @@ const UserRoutes = () => {
 
 
 export default UserRoutes;
+
 
