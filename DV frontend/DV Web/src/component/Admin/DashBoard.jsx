@@ -11,7 +11,7 @@ import SmallChart from "./SmallChart";
 import AdminProfile from "./Profile/AdminProfile";
 import UserProfileList from "./Profile/UserProfileList";
 import DataSetList from "./Dataset/DataSetList";
-import ChartData from "./showdata/chartData";
+import ChartData from "./showdata/ChartData";
 import GraphData from "./showdata/graphData";
 import StatisticsData from "./showdata/StatisticsData";
 import { useDispatch, useSelector } from "react-redux";
@@ -175,3 +175,4 @@ export default function DashBoard() {
         </div>
     );
 }
+
