@@ -12,11 +12,11 @@ const UploadDataset = () => {
 
     const authState = useSelector((store) => store.auth);
     const token = authState?.jwt;
-    console.log("tokenhii", authState);
+    // console.log("tokenhii", authState);
     const isAuthenticated = !!token;
 
     const uploadState = useSelector((store) => store.uploadData);
-    console.log("Upload State:", uploadState); 
+    // console.log("Upload State:", uploadState); 
 
     const loading = uploadState?.loading;
     const error = uploadState?.error;

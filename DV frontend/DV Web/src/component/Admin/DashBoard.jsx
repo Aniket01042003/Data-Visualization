@@ -6,17 +6,17 @@ import { Gi3dStairs } from "react-icons/gi";
 import { LiaClipboardListSolid } from "react-icons/lia";
 import { TbDatabaseOff } from "react-icons/tb";
 import { FcStatistics } from "react-icons/fc";
-import ChartCard from "./ChartCard";
-import SmallChart from "./SmallChart";
-import AdminProfile from "./Profile/AdminProfile";
-import UserProfileList from "./Profile/UserProfileList";
-import DataSetList from "./Dataset/DataSetList";
-import ChartData from "./showdata/chartData";
-import GraphData from "./showdata/graphData";
-import StatisticsData from "./showdata/StatisticsData";
+import ChartCard from "./ChartCard.jsx";
+import SmallChart from "./SmallChart.jsx";
+import AdminProfile from "./Profile/AdminProfile.jsx";
+import UserProfileList from "./Profile/UserProfileList.jsx";
+import DataSetList from "./Dataset/DataSetList.jsx";
+import ChartData from "./showdata/ChartData.jsx";
+import GraphData from "./showdata/GraphData.jsx";
+import StatisticsData from "./showdata/StatisticsData.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { adminLogout, fetchDatasets, fetchGraphs, getAdmin } from "../../Redux/Admin/Action";
-import FalseData from "./showdata/falseData";
+import FalseData from "./showdata/FalseData.jsx";
 
 
 
@@ -45,7 +45,7 @@ export default function DashBoard() {
 
     const fiData = useSelector((store) => store.datasets);
     const filesData = fiData.datasets;
-    console.log("filesData from dashboard", fiData);
+    // console.log("filesData from dashboard", fiData);
 
 
     // ✅ Dynamically handle screen resizing

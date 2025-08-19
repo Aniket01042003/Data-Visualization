@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import UserRoutes from './Routes/UserRoutes.'
-import AdminRoutes from './Routes/AdminRoutes'
+import UserRoutes from './Routes/UserRoutes..jsx'
+import AdminRoutes from './Routes/AdminRoutes.jsx'
 import { ToastContainer } from 'react-toastify'
 import { useDispatch } from 'react-redux';
 import { setUserAuthenticated } from './Redux/Auth/Action';

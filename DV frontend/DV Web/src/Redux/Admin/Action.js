@@ -64,11 +64,11 @@ export const fetchUsers = () => async (dispatch) => {
     const config = { headers: { Authorization: `Bearer ${token}` } };
 
     const { data } = await axios.get(`${API_BASE_URL}/admin/users`, config);
-    console.log("data from fetchuser", data);
+    // console.log("data from fetchuser", data);
 
     dispatch({ type: FETCH_USERS_SUCCESS, payload: data });
   } catch (error) {
-    console.log("error1 ", error);
+    // console.log("error1 ", error);
     dispatch({ type: FETCH_USERS_FAIL, payload: error });
   }
 };
@@ -96,11 +96,11 @@ export const fetchDatasets = () => async (dispatch, getState) => {
     const config = { headers: { Authorization: `Bearer ${jwt}` } };
 
     const { data } = await axios.get(`${API_BASE_URL}/admin/datasets`, config);
-    console.log('action file ', data);
+    // console.log('action file ', data);
 
     dispatch({ type: FETCH_DATASETS_SUCCESS, payload: data });
   } catch (error) {
-    console.log("error from fetchDataset", error);
+    // console.log("error from fetchDataset", error);
     dispatch({ type: FETCH_DATASETS_FAIL, payload: error.message });
   }
 };
@@ -115,11 +115,11 @@ export const fetchGraphs = () => async (dispatch, getState) => {
     const config = { headers: { Authorization: `Bearer ${jwt}` } };
 
     const { data } = await axios.get(`${API_BASE_URL}/admin/graphs`, config);
-    console.log("ftech graph ", data)
+    // console.log("ftech graph ", data)
 
     dispatch({ type: FETCH_GRAPHS_SUCCESS, payload: data });
   } catch (error) {
-    console.log("fetch error", error)
+    // console.log("fetch error", error)
     dispatch({ type: FETCH_GRAPHS_FAIL, payload: error.response.data.message });
   }
 };
@@ -164,7 +164,7 @@ export const getAdmin = (jwt) => async (dispatch) => {
       }
     });
     const admin = response.data;
-    console.log("user admin ", admin);
+    // console.log("user admin ", admin);
     dispatch(getAdminSuccess({ admin, token: jwt }))
   } catch (error) {
     dispatch(getAdminFailure(error.message));

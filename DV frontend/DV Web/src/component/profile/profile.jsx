@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser, logout } from "../../Redux/Auth/Action";
 import { useNavigate } from "react-router-dom";
-import UpdateProfile from "./updateProfile";
-import { deleteDataset, fetchDatasets } from "../../Redux/Dataset/Action";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import UpdateProfile from "./UpdateProfile.jsx";
+import { deleteDataset, fetchDatasets } from "../../Redux/Dataset/Action";
 
 const Profile = () => {
   const dispatch = useDispatch();

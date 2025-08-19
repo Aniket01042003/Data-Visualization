@@ -1,6 +1,4 @@
 import React from "react";
-import { GoInfo } from "react-icons/go";
-import { SiHomeassistantcommunitystore } from "react-icons/si";
 import { CgUserList } from "react-icons/cg";
 import { MdShowChart  } from "react-icons/md";
 import { GiChart } from "react-icons/gi";

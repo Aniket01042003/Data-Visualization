@@ -17,7 +17,7 @@ export const uploadDataset = (file) => async (dispatch, getState) => {
         Authorization: `Bearer ${token}`,
       },
     });
-    console.log("uploadaction dataset ", data.dataset);
+    // console.log("uploadaction dataset ", data.dataset);
     dispatch({
       type: UPLOAD_SUCCESS,
       payload: data.dataset,

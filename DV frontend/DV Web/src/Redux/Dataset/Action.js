@@ -21,7 +21,7 @@ export const fetchDatasets = () => async (dispatch) => {
             Authorization: `Bearer ${jwt}`
         }
     });
-    console.log("response from fetdata", response);
+    // console.log("response from fetdata", response);
     dispatch({ type: FETCH_DATASETS_SUCCESS, payload: response.data });
   } catch (error) {
     console.log("error from fetdata", error);
@@ -32,7 +32,7 @@ export const fetchDatasets = () => async (dispatch) => {
 // Delete Dataset
 export const deleteDataset = (id) => async (dispatch) => {
   dispatch({ type: DELETE_DATASET_REQUEST });
-  console.log("id",id);
+  // console.log("id",id);
   try {
     const jwt = localStorage.getItem("jwt")
     await axios.delete(`${API_BASE_URL}/dataset/${id}`, {

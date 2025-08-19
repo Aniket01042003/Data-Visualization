@@ -14,7 +14,6 @@ const uploadReducer = (state = initialState, action) => {
         return { ...state, loading: true, error: null };
 
     case UPLOAD_SUCCESS:
-        console.log("dataset",action.payload);
         return { ...state, loading: false, dataset: action.payload };
 
     case UPLOAD_FAILURE:

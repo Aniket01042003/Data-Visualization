@@ -3,7 +3,7 @@ import './Navbar.css';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getUser } from '../../Redux/Auth/Action';
-import ShowDataset from '../UploadData/ShowDataset';
+import ShowDataset from '../UploadData/ShowDataset.jsx';
 
 const Navbar = () => {
   const user = useSelector((store) => store.auth);

@@ -1,5 +1,5 @@
 import React from 'react'
-import ChartCard from '../ChartCard'
+import ChartCard from '../ChartCard.jsx'
 
 function StatisticsData({filesData}) {
   return (

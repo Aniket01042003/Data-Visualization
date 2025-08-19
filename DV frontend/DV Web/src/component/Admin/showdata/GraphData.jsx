@@ -7,7 +7,7 @@ export default function GraphData({ data,prevName }) {
   const mountRef = useRef(null);
   const [graphType, setGraphType] = useState("bar"); // Default graph type
 
-  console.log("data from graph fdata", data);
+  // console.log("data from graph fdata", data);
 
   useEffect(() => {
     if (!data || !data.graphConfig || !mountRef.current) return;
@@ -19,7 +19,7 @@ export default function GraphData({ data,prevName }) {
 
     // Extract data
     const { labels, values, color } = data.graphConfig;
-    console.log("Graph data from admin ", data.graphConfig);
+    // console.log("Graph data from admin ", data.graphConfig);
 
     // Scene, Camera, Renderer
     const scene = new THREE.Scene();

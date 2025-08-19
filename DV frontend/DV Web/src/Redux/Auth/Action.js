@@ -13,7 +13,7 @@ export const register = (userData) => async (dispatch) => {
     dispatch(registerRequest())
     try {
         const response = await axios.post(`${API_BASE_URL}/auth/signup`, userData);
-        console.log("response1 ", response);
+        // console.log("response1 ", response);
         const user = response.data;
         // if (user.jwt) {
         //     localStorage.setItem("jwt", user.jwt)
@@ -40,7 +40,7 @@ export const login = (userData) => async (dispatch) => {
         if (user.token.token) {
             localStorage.setItem("jwt",  user.token.token)
         }
-        console.log("user1 ", user.token);
+        // console.log("user1 ", user.token);
         dispatch(loginSuccess(user.token));
         return { success: true, message: "Login successful" };
     } catch (error) {
@@ -67,14 +67,14 @@ const getUserFailure = (error) => ({ type: GET_USER_FAILURE, payload: error });
 export const getUser = (jwt) => async (dispatch) => {
     dispatch(getUserRequest())
     try {
-        console.log(jwt);
+        // console.log(jwt);
         const response = await axios.get(`${API_BASE_URL}/user/profile`, {
             headers: {
                 Authorization: `Bearer ${jwt}`
             }
         });
         const user = response.data;
-        console.log("user getuser ", response);
+        // console.log("user getuser ", response);
         dispatch(getUserSuccess({ user, token: jwt }))
     } catch (error) {
         dispatch(getUserFailure(error.message));
@@ -98,7 +98,6 @@ export const updateUser = (userId, userData) => async (dispatch) => {
             }
         );
         dispatch({ type: UPDATE_USER_SUCCESS, payload: response.data });
-        console.log("hii")
         return { success: true };
     } catch (error) {
         dispatch({ type: UPDATE_USER_FAILURE, payload: error.response?.data?.message || "Update failed" });

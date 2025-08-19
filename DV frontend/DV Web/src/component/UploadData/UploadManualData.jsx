@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { FaRegFileLines } from "react-icons/fa6";
 import { API_BASE_URL } from '../../utils/apiConfig';
 import { useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
@@ -30,10 +29,10 @@ function UploadManualData() {
                 { X: xValues.split(',').map(Number) },
                 { Y: yValues.split(',').map(Number) }
             ];
-            console.log("name Data ", name);
-            console.log("description Data ", description);
-            console.log("manual Data ", manualData);
-            console.log("token ", token);
+            // console.log("name Data ", name);
+            // console.log("description Data ", description);
+            // console.log("manual Data ", manualData);
+            // console.log("token ", token);
             
             const { data } = await axios.post(`${API_BASE_URL}/dataset/manual`, {
                 name,

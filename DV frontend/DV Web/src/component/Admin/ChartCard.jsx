@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import LineAdminChart from "./charty/LineAdminChart";
 import BarAdminChart from "./charty/BarAdminChart";
 import { fetchDatasets, fetchUsers } from "../../Redux/Admin/Action";
-import Line2AdminChart from "./charty/Line2AdminChart";
+import Line2AdminChart from "./charty/Line2AdminChart.jsx";
 
 const ChartCard = ({filesData}) => {
   const dispatch = useDispatch();

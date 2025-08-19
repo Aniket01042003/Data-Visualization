@@ -27,7 +27,7 @@ const UpdateProfile = ({ user, jwt, onClose }) => {
 
     try {
       const result = await dispatch(updateUser(user._id, updatedUser, jwt));
-      console.log("result from update profile", { result });
+      // console.log("result from update profile", { result });
       if (result.success) {
         toast.success("Profile updated successfully!");
         dispatch(getUser(jwt));

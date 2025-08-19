@@ -8,11 +8,11 @@ export default function DataSetList({prevName,filesData, index, setActiveItem })
   const dispatch = useDispatch();
 
 
-  console.log("prevName from datalist", prevName);
+  // console.log("prevName from datalist", prevName);
 
   const graphData = useSelector((store) => store.graphs);
   const graphArray = graphData?.graphs;
-  console.log("graphData", graphArray);
+  // console.log("graphData", graphArray);
 
 
   // Determine if it's chart or graph data

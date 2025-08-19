@@ -17,7 +17,7 @@ export default function UserProfileList({ prevName, setActiveItem }) {
   const fiData = useSelector((store) => store.datasets);
   const filesData = fiData.datasets;
   const [files, setFiles] = useState(filesData);
-  console.log("filesdata from CC", filesData);
+  // console.log("filesdata from CC", filesData);
   const userData = useSelector((store) => store.users);
   const users = userData.users;
 
@@ -31,7 +31,7 @@ export default function UserProfileList({ prevName, setActiveItem }) {
   const handleDelete = (fileId) => {
     if (window.confirm("Are you sure you want to delete this file?")) {
       const fileToDelete = files.find((file) => file._id === fileId);
-      console.log("fileToDelete", fileToDelete);
+      // console.log("fileToDelete", fileToDelete);
 
       if (fileToDelete) {
         if (fileToDelete) {

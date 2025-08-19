@@ -1,7 +1,7 @@
 import React from 'react';
 import { Router, Route, Routes } from 'react-router-dom';
-import DashBoard from '../component/Admin/DashBoard';
-import Profile from '../component/profile/profile';
+import DashBoard from '../component/Admin/DashBoard.jsx';
+import Profile from '../component/profile/profile.jsx';
 
 const UserRoutes = () => {
     return (
