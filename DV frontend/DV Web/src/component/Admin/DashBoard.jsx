@@ -6,6 +6,7 @@ import { Gi3dStairs } from "react-icons/gi";
 import { LiaClipboardListSolid } from "react-icons/lia";
 import { TbDatabaseOff } from "react-icons/tb";
 import { FcStatistics } from "react-icons/fc";
+<<<<<<< HEAD
 import ChartCard from "./ChartCard.jsx";
 import SmallChart from "./SmallChart.jsx";
 import AdminProfile from "./Profile/AdminProfile.jsx";
@@ -14,6 +15,16 @@ import DataSetList from "./Dataset/DataSetList.jsx";
 import ChartData from "./showdata/ChartData.jsx";
 import GraphData from "./showdata/GraphData.jsx";
 import StatisticsData from "./showdata/StatisticsData.jsx";
+=======
+import ChartCard from "./ChartCard";
+import SmallChart from "./SmallChart";
+import AdminProfile from "./Profile/AdminProfile";
+import UserProfileList from "./Profile/UserProfileList";
+import DataSetList from "./Dataset/DataSetList";
+import ChartData from "./showdata/ChartData";
+import GraphData from "./showdata/graphData";
+import StatisticsData from "./showdata/StatisticsData";
+>>>>>>> c2d4f6b5f0d3f0d48bb3bcff6794acd2fd896d85
 import { useDispatch, useSelector } from "react-redux";
 import { adminLogout, fetchDatasets, fetchGraphs, getAdmin } from "../../Redux/Admin/Action";
 import FalseData from "./showdata/FalseData.jsx";
@@ -175,3 +186,4 @@ export default function DashBoard() {
         </div>
     );
 }
+
