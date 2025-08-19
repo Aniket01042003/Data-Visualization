@@ -1,7 +1,6 @@
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt.js");
-const bcrypt = require("bcryptjs");
 
 exports.signup = async (userData) => {
   try {
@@ -45,6 +44,7 @@ exports.generateToken = (user) => {
     { expiresIn: "72h" }
   );
 };
+
 
 
 
